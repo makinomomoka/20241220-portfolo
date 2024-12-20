@@ -1,0 +1,259 @@
+@charset "utf-8";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  margin-left: 300px;
+}
+
+/* 全体リンク */
+a {
+  text-decoration: none;
+  color: black;
+
+}
+
+/****************************
+* サイドバー
+*****************************/
+.sidebar {
+  background: #eee;
+  width: 300px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.sidebar img {
+  margin-top: 35px;
+}
+
+/*** side-p ***/
+.side-p {
+  font-size: 15px;
+  font-weight: 400;
+  padding: 0 75px;
+}
+
+.li-ti {
+  font-size: 20px;
+  padding: 0 120px;
+}
+
+.sidebar li {
+  font-size: 20px;
+}
+
+/****************************
+* ヘッダー
+*****************************/
+
+.main-v {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: url("../img/main-img.png")center / cover;
+}
+
+.header-pf {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 0;
+  transform: translate(-50%,-50%);
+  font-size: 96px;
+}
+
+/****************************
+* メイン
+*****************************/
+main {
+  position: relative;
+}
+
+h2 {
+  font-size:64px;
+  display: flex;
+  padding: 16px 0;
+  justify-content: center;
+  align-items: center;
+}
+
+h3{
+  font-size: 32px;
+}
+
+/* about */
+#about{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 96px;
+}
+
+.name span{
+  font-size: 20px;
+}
+
+.name{
+  flex-direction: column;
+  font-size: 36px;
+}
+
+/* hobby */
+
+#hobby{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.ho{
+  display: flex;
+  align-items: center;
+  gap: 96px;
+}
+
+.ho-p{
+  flex-direction: column;
+  font-size: 20px;
+}
+
+/* work */
+#work{
+  display: flex;
+  width: 1140px;
+  padding: 0px 100px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 80px 120px;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.wo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  height: 278px;
+}
+
+.wo-p {
+  text-align: center;
+}
+
+/* skills */
+#skills{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 42px;
+  align-self: stretch;
+}
+
+.ca-p{
+  font-size: 24px;
+  text-align:center;
+  padding:20px 0;
+}
+
+.card{
+  display: flex;
+  width: 756px;
+  padding: 24px 32px;
+  align-items: center;
+  gap: 40px;
+}
+
+.ca-icon{
+  display: flex;
+  width: 100px;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.ca-icon p{
+  margin: 0;
+}
+
+/* contact */
+#contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.btn-area {
+  /* width: 220px;
+  height: 40px; */
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  padding: 26px;
+  align-items: center;
+}
+
+input {
+  width: 400px;
+  max-width: 100%;
+  padding: 8px;
+  border: none;
+  font-size: 16px;
+  line-height: 1.0;
+  background: #eee;
+}
+
+textarea {
+  width: 500px;
+  max-width: 100%;
+  min-height: 300px;
+  padding: 8px;
+  border: none;
+  font-size: 16px;
+  line-height: 1.6;
+  resize: vertical;
+  background: #eee;
+
+}
+
+
+button {
+  padding: 16px 32px;
+  font-size: 16px;
+  border: none;
+}
+
+/****************************
+* フッター
+*****************************/
+
+
+footer{
+  background-color: #eee;
+  display: flex;
+  height: 100px;
+  padding: 0px 445px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
